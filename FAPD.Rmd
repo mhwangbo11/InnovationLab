@@ -1,0 +1,58 @@
+---
+title: "FootballAnalytics_PD_012020"
+author: "Min Hwangbo"
+date: "1/20/2020"
+output: 
+  html_document:
+    theme: flatly
+    highlight: pygments
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    collapsed: true
+    smooth_scroll: true
+    number_sections: false
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Articles/Resources
+
+* [Article: The Beautiful Game: How Data Visualization Can Change Football On and Off the Field (Smith, 2020)](https://medium.com/nightingale/how-data-visualization-could-change-soccer-on-and-off-the-field-8b1368036ab) 
+<!-- * [Data on StatsBombR](https://github.com/statsbomb/open-data/tree/master/data/matches) -->
+* [Article: A Multilevel Model for International Soccer (Vladeck & Thompson, 2018)](https://rpubs.com/etsafe11/world_cup)
+* [Data: FBRef.com in collaboration w/ StatsBombR (2018)](https://fbref.com/en/)
+
+# Informational Interview
+
+Questions to ask if I ever get an informational interview with a person from OPTA or similar places: 
+
+**Balance:**
+
+* What does a typical day look like? 
+* How large is the team, and how many people have overlapping responsibilities?
+* Do most who work there seem to have active and healthy lives outside of work, or do they "live" there?
+* What are the expectations for you to be accessible and communicate after work?
+
+**Intellectual Challenges:**
+
+* What was one of the most interesting projects you have worked on? 
+* What kinds of projects are you most interested in pursuing and why?
+* What kinds of research and information do employees have access to while working here?  
+* What are the future goals of the organization and how does this role support those goals? 
+
+**Flexibility:**
+
+* What are your preferred forms of communication when working with your team?  
+
+**Analytical:**
+
+* What do team dynamics look like?  How open are they to thinking outside the box, transparency and self evaluation?
+* How does the organization create channels for feedback, communication and information sharing? 
+
+
+**Impact:**
+
+* What are the future goals of the organization and how does this role support those goals?
+* Who do you think your work most impacts?
