@@ -1,0 +1,34 @@
+---
+title: "TextMining_INL_091620"
+author: "Min Hwangbo"
+date: "9/16/2020"
+  html_document:
+    preserve_yaml: true
+    toc: true
+    toc_float: true
+    keep_md: true
+published: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* Inspiration: [本橋智光, 2019](http://www.yes24.com/24/AuthorFile/Author/278360)
+* Guideline on installing [`RMeCab` packages](https://github.com/IshidaMotohiro/RMeCab)
+
+# Step 1: Loading library
+```{r}
+library(tidyverse) # Data transformation package
+library(tidytext)  # Text mining package for exploratory analysis
+library(wordcloud) # Visualizing common words in a word cloud
+```
+
+# Step 2: Loading data set
+```{r}
+```
+
+# Step 3: Tokenization
+```{r}
+unnest_tokens(tbl = dat, output = "tok", input = txt)
+```
