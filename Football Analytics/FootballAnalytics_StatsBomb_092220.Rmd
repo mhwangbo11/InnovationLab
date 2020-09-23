@@ -1,0 +1,89 @@
+---
+title: "Heatmap_NWSL_092220"
+author: "Min Hwangbo"
+date: "9/22/2020"
+output:
+  html_document:
+    preserve_yaml: true
+    toc: true
+    toc_float: true
+    keep_md: true
+published: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Overview
+> Reference & Data Source
+
+* [StatsBombR](https://github.com/mhwangbo11/StatsBombR)
+* [Accessing and Working with StatsBomb data in R](http://statsbomb.com/wp-content/uploads/2019/12/Using-StatsBomb-Data-In-R.pdf)
+
+# Step 1: Loading packages
+```{r message = F, warning = F}
+library(tidyverse)  # Data Transformation/integration package
+library(StatsBombR) # StatsBombR OpenSource data set
+library(grid)       # Grid graphics package
+library(ggplot2)    # Data visualization package
+library(flextable)  # Table rendering package
+```
+
+# Step 2: Loading data set
+```{r message = F, warning = F, results = 'hide'}
+Comp <- FreeCompetitions() %>% 
+  filter(competition_id==49) # United States the National Women's Soccer League (2018)
+Matches <- FreeMatches(Comp) # Calling all NWSL match data in 2018
+SBD <- StatsBombFreeEvents(MatchesDF = Matches, Parallel = T) # Creating a data frame
+SBD = allclean(SBD) # Extracting everything including x/y coordinates
+```
+
+# Step 3: Exploratory Data Analysis (*EDA*)
+## Case 1: Goals and Shots
+```{r message = F, warning = F, results = 'hide'}
+shots_goals = SBD %>%
+ group_by(team.name) %>%
+  summarise(shots = sum(type.name=="Shot", na.rm = TRUE)/n_distinct(match_id), goals = sum(shot.outcome.name=="Goal", na.rm = TRUE)/n_distinct(match_id)) # Dividing the number of shots/goals by each distinct (or unique) instance of a match, for every team. i.e. dividing the numbers per game.
+```
+
+```{r}
+shots_goals
+```
+
+## Case 2: Data to a Chart `Shots per game`
+```{r}
+ggplot(data = shots_goals, aes(x=reorder(team.name, shots), y=shots)) + 
+         geom_bar(stat="identity", width = .5) + 
+          labs(x="Teams", y= "Shots") +
+          theme(axis.title.y = element_blank()) +
+          scale_y_continuous(expand=c(0,0)) + 
+          coord_flip() +
+          ggtitle('Shots per Game: NWSL in 2018') +
+          theme_minimal()
+```
+
+## Case 3: Player Shots per 90 minutes
+```{r message = F, warning = F, results = 'hide'}
+player_shots = SBD %>%
+ group_by(player.name, player.id) %>%
+ summarise(shots = sum(type.name=="Shot", na.rm = TRUE)) # Step 1
+player_minutes = get.minutesplayed(SBD) # Step 2
+player_minutes = player_minutes %>%
+ group_by(player.id) %>%
+ summarise(minutes = sum(MinutesPlayed)) # Step 3 
+player_shots = left_join(player_shots, player_minutes) # Step 4
+player_shots = player_shots %>% mutate(nineties = minutes/90) # Step 5
+player_shots = player_shots %>% mutate(shots_per90 = shots/nineties) # Step 6
+player_shots <- player_shots %>% 
+  filter(shots_per90 !=0) # Step 7: Filter shots_per90 = 0
+player_shots <- player_shots %>% arrange(desc(shots_per90)) # Step 8: Rearrange data based on shots_per90
+```
+
+```{r}
+flextable(
+  head(player_shots, 10),
+  col_keys = c("player.name", "shots", "minutes","shots_per90"))
+```
+
+## Case 4: Coming Soon
