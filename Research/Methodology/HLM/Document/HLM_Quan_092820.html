@@ -1525,9 +1525,12 @@ div.tocify {
 <li>If you are a UW student/staff, I highly recommend taking classes from Liz Sanders. These include the following:
 <ul>
 <li>Hierarchical Linear Modeling (HLM | EDPSY576)</li>
-<li>Structural Equation Modeling (SEM | EDPSY575)</li>
+<li>Structural Equation Modeling (SEM | EDPSY575)ßß</li>
 </ul></li>
-<li>I also recommend referencing the text from <a href="https://www.stats.ox.ac.uk/~snijders/mlbook.htm">Snijers, T. A. B., &amp; Bosker, R. J. (2012). <em>Multilevel Analysis: An Introduction to Basic and Advanced Multilevel Modeling, second edition. London etc.: Sage Publishers.</em></a></li>
+<li>I also recommend referencing the text from <a href="https://www.stats.ox.ac.uk/~snijders/mlbook.htm">Snijders, T. A. B., &amp; Bosker, R. J. (2012). <em>Multilevel Analysis: An Introduction to Basic and Advanced Multilevel Modeling, second edition. London etc.: Sage Publishers.</em></a></li>
+<li>Supplemental information &amp; data from the textbook available <a href="https://www.stats.ox.ac.uk/~snijders/mlbook.htm">here</a></li>
+<li>As well as the ppt slides from [Snijers(2012)] (<a href="https://www.stats.ox.ac.uk/~snijders/MLB_new_S.pdf" class="uri">https://www.stats.ox.ac.uk/~snijders/MLB_new_S.pdf</a>)</li>
+<li>If you’re new to R, I have posted some slides on R including 1) Intro to RStudio &amp; 2) Data transformation in R. Link to Workshop materials can be found <a href="https://github.com/mhwangbo11/Workshop">here</a></li>
 </ul>
 </div>
 <div id="acknowledgement" class="section level2">
@@ -1542,7 +1545,7 @@ div.tocify {
 <blockquote>
 <p>“Hierarchical Linear Modeling (HLM) is a complex form of ordinary least squares (OLS) regression that is used to analyze variance in the outcome variables when the predictor variables are at varying hierarchical levels; for example, students in a classroom share variance according to their common teacher and common classroom.” (<a href="http://www.tqmp.org/RegularArticles/vol08-1/p052/p052.pdf">Woltman et al., 2012, p.52</a>)</p>
 </blockquote>
-<p>And what do we mean by <code>variance</code>? Based on (<a href="https://en.wikipedia.org/wiki/Variance">Wiki</a>):</p>
+<p>And what do we mean by <code>variance</code>? Based on <a href="https://en.wikipedia.org/wiki/Variance">Wikipedia</a>:</p>
 <ul>
 <li>“Variance is the expectation of the squared deviation of a random variable from its mean.”</li>
 <li>“Informally, it measures how far a set of numbers is spread out from their average value.”</li>
@@ -1551,11 +1554,142 @@ div.tocify {
 </ul>
 <p>In sum, anyon who’s interested in a statistical research modeling can apply HLM to explore shared variance in hierarchically structured data that has either 2-level or 3-level structure.</p>
 </div>
-<div id="icc" class="section level1">
-<h1>ICC</h1>
+<div id="prepping" class="section level1">
+<h1>Prepping</h1>
+<div id="loading-packages" class="section level2">
+<h2>Loading packages</h2>
+<p>Please install <code>lme4</code> package &amp; <code>Matrix</code> package on your R Studio console before you load the package by using the code <code>install.packages(&quot;packagename&quot;)</code></p>
+<pre class="r"><code>library(lme4)   # Linear Mixed-Effects Models Package
+library(Matrix) # Package for hierarchy of matrix classes, etc</code></pre>
+</div>
+<div id="icc" class="section level2">
+<h2>ICC</h2>
+<p>Intraclass Correlation Coefficient (ICC) can be useful especially for a linear model that has a fixed variable as well as a random effect: the classic random intercept model.</p>
+<blockquote>
+<p>You can calculate ICC once you have calculated the empty model (random effects ANOVA) which contains no explanatory variables which is “often between .05 and .25 in social science research” (Snijders, 2012, p.12).</p>
+</blockquote>
+<ul>
+<li>Intraclass correlation (<em>p</em>) =
+<ul>
+<li>Level-two variance / (Level-two variance + Level-one variance) =</li>
+<li>Predicted variance / (Predicted variance + Residual variance)</li>
+</ul></li>
+<li>For instance if your ICC turns out to be .22, you can explain it as there is about 22 percent of variance in level 1 (micro-level) that is explained by level 2 (macro-level).</li>
+</ul>
+</div>
 </div>
 <div id="level-model" class="section level1">
 <h1>2-level model</h1>
+<div id="step-1-loading-packages" class="section level2">
+<h2>Step 1: Loading packages</h2>
+<pre class="r"><code>library(lme4)   # Linear Mixed-Effects Models Package
+library(Matrix) # Package for hierarchy of matrix classes, etc</code></pre>
+</div>
+<div id="step-2-loading-data-set" class="section level2">
+<h2>Step 2: Loading data set</h2>
+<pre class="r"><code>exampleDB &lt;- read.csv(&quot;~/Documents/GitHub/InnovationLab/Research/Methodology/HLM/Data/mlbook2_r.dat&quot;, sep=&quot;&quot;) # This will need to be changed based on which directory you saved your data file. Data file available from Snijders&#39;s website referred in `context` section.
+
+# Then perform a quality check
+head(exampleDB, 5) # Clear
+tail(exampleDB, 5) # Clear
+ls(exampleDB) # 3758 vars, 11 vars (See RMD file to see the results)</code></pre>
+</div>
+<div id="step-3-set-up-run-an-intercept-only-empty-model-m0" class="section level2">
+<h2>Step 3: Set up &amp; Run an intercept-only (empty) model: M0</h2>
+<p>Let’s assume language score (<code>langPOST</code>) as our outcome variable from micro-level (L1) and see whether the school mebmership (<code>schoolnr</code>) has any relationship.</p>
+<pre class="r"><code>M0 &lt;- lmer(langPOST ~ (1|schoolnr), data = exampleDB, REML = F)
+
+# Then let&#39;s see how this one turns out...
+summary(M0)</code></pre>
+<pre><code>## Linear mixed model fit by maximum likelihood  [&#39;lmerMod&#39;]
+## Formula: langPOST ~ (1 | schoolnr)
+##    Data: exampleDB
+## 
+##      AIC      BIC   logLik deviance df.resid 
+##  26601.3  26620.0 -13297.6  26595.3     3755 
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -4.1848 -0.6416  0.0909  0.7227  2.5277 
+## 
+## Random effects:
+##  Groups   Name        Variance Std.Dev.
+##  schoolnr (Intercept) 18.13    4.257   
+##  Residual             62.85    7.928   
+## Number of obs: 3758, groups:  schoolnr, 211
+## 
+## Fixed effects:
+##             Estimate Std. Error t value
+## (Intercept)  41.0046     0.3249   126.2</code></pre>
+</div>
+<div id="step-4-interpretation-of-m0" class="section level2">
+<h2>Step 4: Interpretation of M0</h2>
+<p>Based on the M0 result, we know the following:</p>
+<ul>
+<li>The overall distribution of the language scores (<code>langPOST</code>) of students provide a mean of 41.00 (FE intercept)</li>
+<li>The standard deviation of the langauge scores of students is <span class="math display">\[\sqrt{18.13+62.75}\]</span>= 8.99</li>
+<li>ICC for this model: 18.13/(18.13+62.85) = .22 meaning there is about 22 percent of variance in level 1 (<code>langPOST</code>) that is explained by school membership (<code>schoolnr</code>).</li>
+<li>It also indicates expected correlation between any 2 randomly selected L1 units (<code>langPOST</code>) for a given L2 (<code>schoolnr</code>) is <em>r</em> = 22.</li>
+</ul>
+<blockquote>
+<p>Is it worth it to perform a multi-level analysis? probably…</p>
+</blockquote>
+</div>
+<div id="step-5a-adding-micro-level-predictors-m1a" class="section level2">
+<h2>Step 5a: Adding micro-level predictors: M1a</h2>
+<p>What if we add one explanatory variable (i.e. <code>IQ_verb</code>) and call it M1a?</p>
+<pre class="r"><code>M1a &lt;- lmer(langPOST ~ IQ_verb + (1|schoolnr), data = exampleDB, REML = F)
+summary(M1a)</code></pre>
+<pre><code>## Linear mixed model fit by maximum likelihood  [&#39;lmerMod&#39;]
+## Formula: langPOST ~ IQ_verb + (1 | schoolnr)
+##    Data: exampleDB
+## 
+##      AIC      BIC   logLik deviance df.resid 
+##  24920.2  24945.1 -12456.1  24912.2     3754 
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -4.1963 -0.6385  0.0659  0.7098  3.2143 
+## 
+## Random effects:
+##  Groups   Name        Variance Std.Dev.
+##  schoolnr (Intercept)  9.845   3.138   
+##  Residual             40.469   6.362   
+## Number of obs: 3758, groups:  schoolnr, 211
+## 
+## Fixed effects:
+##             Estimate Std. Error t value
+## (Intercept) 41.05488    0.24339  168.68
+## IQ_verb      2.50744    0.05438   46.11
+## 
+## Correlation of Fixed Effects:
+##         (Intr)
+## IQ_verb 0.003</code></pre>
+<p>Based on the summary results:</p>
+<ul>
+<li><p>FE coefficient estimates in the model mean:</p>
+<ul>
+<li>Intercept: 41.05</li>
+<li>IQ_verb: 2.51</li>
+</ul></li>
+<li><p>The model equation is y = 41.05 + U0j + 2.507IQ</p></li>
+<li><p>The model results indicate 41.05 mean IQ verbal score across all schools.</p></li>
+<li><p>Class-dependent deviations of the intercept and have a mean of 0 and a variance of 9.85 that a standard deviation of <span class="math display">\[\sqrt{9.85}\]</span>= 3.14</p></li>
+</ul>
+</div>
+<div id="step-5b-adding-micro-level-predictors-standardized-score-m1b" class="section level2">
+<h2>Step 5b: Adding micro-level predictors (standardized score): M1b</h2>
+</div>
+<div id="step-6-adding-an-interaction-term-m2" class="section level2">
+<h2>Step 6: Adding an interaction term: M2</h2>
+</div>
+<div id="step-7a-bayesian-information-criterion-bic-test-raftery-1995" class="section level2">
+<h2>Step 7a: Bayesian Information Criterion (BIC) test <a href="https://www.jstor.org/stable/271063">(Raftery, 1995)</a></h2>
+<pre class="r"><code># BIC value: Lower = Better</code></pre>
+</div>
+<div id="step-7b-likelihood-ratio-test-lrt" class="section level2">
+<h2>Step 7b: Likelihood Ratio Test (LRT)</h2>
+</div>
 </div>
 <div id="level-model-1" class="section level1">
 <h1>3-level model</h1>
