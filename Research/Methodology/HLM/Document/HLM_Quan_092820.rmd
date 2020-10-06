@@ -118,19 +118,23 @@ Based on the summary results:
 
 ## Step 5b: Adding micro-level predictors (standardized score): M1b
 ```{r}
+M1b <-
 ```
 
 ## Step 6: Adding an interaction term: M2
 ```{r}
+M2 <-
 ```
 
 ## Step 7a: Bayesian Information Criterion (BIC) test [(Raftery, 1995)](https://www.jstor.org/stable/271063)
 ```{r}
 # BIC value: Lower = Better
+bic(M1a, M1b, M2)
 ```
 
 ## Step 7b: Likelihood Ratio Test (LRT)
 ```{r}
+lrtest(M1a, M1b, M2)
 ```
 
 
