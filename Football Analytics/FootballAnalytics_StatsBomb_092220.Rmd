@@ -20,6 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * [StatsBombR](https://github.com/mhwangbo11/StatsBombR)
 * [Accessing and Working with StatsBomb data in R](http://statsbomb.com/wp-content/uploads/2019/12/Using-StatsBomb-Data-In-R.pdf)
+* [Understat](https://understat.com/)
 
 # Step 1: Loading packages
 ```{r message = F, warning = F}
