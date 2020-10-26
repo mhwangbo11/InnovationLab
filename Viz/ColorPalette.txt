@@ -36,3 +36,13 @@ RGB: 56 0 60
 Cyan Green
 HEX: 00FF85
 RGB: 38003C
+
+---
+Pantone
+[2020] Color of the year: Classic Blue 19-4052
+HEX: 0F4C81
+RGB: 15 76 129
+
+[2019] Color of the year: Living Coral 16-1546
+HEX: FA7268
+HEX: 250 114 104
