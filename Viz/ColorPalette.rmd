@@ -15,24 +15,6 @@ published: false
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Max
-## Mustard Yellow
-* HEX: F1BB43
-* RGB: 241 187 67
-
-## Grapefruit
-* HEX: EB4C3E
-* RGB: 235 76 62
-  
-# Twice
-## Pantone 712C Apricot
-* HEX: FCC89B
-* RGB: 252 200 155
-
-## Pantone 812C Flamingo Pink
-* HEX: FF5FA2
-* RGB: 255 95 162
-
 # Manchester United
 ## Red
 * HEX: DA291C
@@ -42,15 +24,15 @@ knitr::opts_chunk$set(echo = TRUE)
 * HEX: FBE122
 * RGB: 251 225 34
 
-# Premier League
-## Purple
-* HEX: 38003C
-* RGB: 56 0 60
+# Max
+## Mustard Yellow
+* HEX: F1BB43
+* RGB: 241 187 67
 
-## Cyan Green
-* HEX: 00FF85
-* RGB: 38003C
-
+## Grapefruit
+* HEX: EB4C3E
+* RGB: 235 76 62
+  
 # Pantone
 ## 2021 Color of the year?: Aqua Splash 14-4812
 * HEX: 85CED1
@@ -63,3 +45,21 @@ knitr::opts_chunk$set(echo = TRUE)
 ## 2019 Color of the year: Living Coral 16-1546
 * HEX: FA7268
 * RGB: 250 114 104
+
+# Premier League
+## Purple
+* HEX: 38003C
+* RGB: 56 0 60
+
+## Cyan Green
+* HEX: 00FF85
+* RGB: 38003C
+
+# Twice
+## Pantone 712C Apricot
+* HEX: FCC89B
+* RGB: 252 200 155
+
+## Pantone 812C Flamingo Pink
+* HEX: FF5FA2
+* RGB: 255 95 162
