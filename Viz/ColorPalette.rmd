@@ -48,8 +48,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * RGB: 56 0 60
 
 ## Cyan Green
-HEX: 00FF85
-RGB: 38003C
+* HEX: 00FF85
+* RGB: 38003C
 
 # Pantone
 ## 2020 Color of the year: Classic Blue 19-4052
