@@ -52,6 +52,10 @@ knitr::opts_chunk$set(echo = TRUE)
 * RGB: 38003C
 
 # Pantone
+## 2021 Color of the year?: Aqua Splash 14-4812
+* HEX: 85CED1
+* RGB: 133 206 209
+
 ## 2020 Color of the year: Classic Blue 19-4052
 * HEX: 0F4C81
 * RGB: 15 76 129
