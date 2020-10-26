@@ -53,7 +53,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Cyan Green
 * HEX: 00FF85
-* RGB: 38003C
+* RGB: 0 255 133
 
 # Twice
 ## Pantone 712C Apricot
