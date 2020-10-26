@@ -1,0 +1,17 @@
+Max
+Mustard Yellow
+HEX: F1BB43
+RGB: 241 187 67
+
+Grapefruit
+HEX: EB4C3E
+RGB: 235 76 62
+
+Twice
+[Pantone 712C] Apricot
+HEX: FCC89B
+RGB: 252 200 155
+
+[Pantone 812C] Flamingo Pink
+HEX: FF5FA2
+RGB: 255 95 162
