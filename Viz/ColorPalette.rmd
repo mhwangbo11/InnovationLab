@@ -1,48 +1,61 @@
+---
+title: "Assorted Color Palette"
+author: "Min Hwangbo"
+date: "10/25/2020"
+output:
+  html_document:
+    preserve_yaml: true
+    toc: true
+    toc_float: true
+    keep_md: true
+published: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Max
-Mustard Yellow
-HEX: F1BB43
-RGB: 241 187 67
+## Mustard Yellow
+* HEX: F1BB43
+* RGB: 241 187 67
 
-Grapefruit
-HEX: EB4C3E
-RGB: 235 76 62
-
----
+## Grapefruit
+* HEX: EB4C3E
+* RGB: 235 76 62
+  
 # Twice
-[Pantone 712C] Apricot
-HEX: FCC89B
-RGB: 252 200 155
+## Pantone 712C Apricot
+* HEX: FCC89B
+* RGB: 252 200 155
 
-[Pantone 812C] Flamingo Pink
-HEX: FF5FA2
-RGB: 255 95 162
+## Pantone 812C Flamingo Pink
+* HEX: FF5FA2
+* RGB: 255 95 162
 
----
 # Manchester United
-Red
-HEX: DA291C
-RGB: 218 41 28
+## Red
+* HEX: DA291C
+* RGB: 218 41 28
 
-Yellow
-HEX: FBE122
-RGB: 251 225 34
+## Yellow
+* HEX: FBE122
+* RGB: 251 225 34
 
----
 # Premier League
-Purple
-HEX: 38003C
-RGB: 56 0 60
+## Purple
+* HEX: 38003C
+* RGB: 56 0 60
 
-Cyan Green
+## Cyan Green
 HEX: 00FF85
 RGB: 38003C
 
----
 # Pantone
-[2020] Color of the year: Classic Blue 19-4052
-HEX: 0F4C81
-RGB: 15 76 129
+## 2020 Color of the year: Classic Blue 19-4052
+* HEX: 0F4C81
+* RGB: 15 76 129
 
-[2019] Color of the year: Living Coral 16-1546
-HEX: FA7268
-HEX: 250 114 104
+## 2019 Color of the year: Living Coral 16-1546
+* HEX: FA7268
+* RGB: 250 114 104
