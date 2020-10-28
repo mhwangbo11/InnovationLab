@@ -1,0 +1,46 @@
+---
+title: "Can I become a Chief Data Officer?"
+author: "Min Hwangbo"
+date: "10/27/2020"
+output:
+  html_document:
+    preserve_yaml: true
+    toc: true
+    toc_float: true
+    keep_md: true
+published: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Motivation
+To be honest, I have no idea why I am writing this essay-ish Rmarkdown documentation. As a kid, I don't think I enjoyed learning HTML, Adobe Photoshop, nor building a web site in an AP summer camp in Korea which I felt I signed up for a wrong geek from kindergarten to the 9th grade. I could share why I decided to leave the country, my time in Auckland, NZ or Vancouver, BC, yet I think it's more appropriate to skip those boring, hectic, and chaotic time to 2013.
+
+Ironically, when I went back to Korea from Seattle, WA, USA to serve in a mandatory military service, the very first book that I read (of course to kill my time) was a book published by an author from Samsung (or Samsung). The author was talking about SQL, big data, and how professionals in companies are shifting its decision making processes from strategy-based goal settings to data-driven decision making processes. 
+
+I seriously had no idea I would come back to Seattle, join a Master's in Education Policy program (by the way, check it out it's pretty dope) back at University of Washington to get a job as a professional in the education sector, or to find anything to do.
+
+
+
+# Estimating Project Timeline
+
+Patrick Gleeson's recommendation from **Working with Coders: A guide to Software Development for the Perplexed Non-Techie (2017, p.38)** suggests estimating a task should be considered as multiple graphs not points and here's how I interpret it:
+
+1) If a project is in its normal distribution curve:
+* If a developer says 5 days to develop an unknown chunk, codes, etc., this usually means it will take 5 days to complete.
+* Also at the same time it may take a week (7 days) to accomplish a task.
+* It will not be a surprising event if it takes up to 10 days to complete.
+* Well at least, you can be confident it will not take 25 days to complete such task.
+
+2) If a project is considered in its abnormal form... which could happen:
+* 4 days probably is all it takes to bulid the unknown codes.
+* Well if the event is on an outlier phase, then it may take 3 days to complete such task.
+* Bottom line, there's no way it will take 1 day to complete the unknown.
+
+When I was reading this page, I recalled two previous events:
+* Abel Wang from Microsoft mentioned during a university-wide Agile Community of Practice that @ MS, all projects are considered to be on 3-week term.
+* Cass Tang from UW TechConnect also mentioned when Cass projects how much time it will take a developer to create a set of codes, Cass multiplies 3 to reported time so that there will be some room for commit and improvement, if possible.
+
+
