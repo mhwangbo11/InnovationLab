@@ -11,9 +11,7 @@ output:
 published: false
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 # Mamamoo
 ## Purple
