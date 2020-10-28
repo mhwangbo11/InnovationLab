@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/682533/46cafdd3cdd14faeb32461103731be56
+bundleId: https://api.rpubs.com/api/v1/document/682533/46cafdd3cdd14faeb32461103731be56
+url: http://rpubs.com/mhwangbo11/682533
+when: 1603862329.19597

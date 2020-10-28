@@ -50,7 +50,9 @@ Patrick Gleeson's recommendation from *Working with Coders: A guide to Software 
 * Bottom line, there's no way it will take 1 day to complete the unknown.
 
 When I was reading this page, I recalled two previous events:
+
 * Abel Wang from Microsoft mentioned during a university-wide Agile Community of Practice that @ MS, all projects are considered to be on 3-week term.
+
 * Cass Tang from UW TechConnect also mentioned when Cass projects how much time it will take a developer to create a set of codes, Cass multiplies 3 to reported time so that there will be some room for commit and improvement, if possible.
 
 
