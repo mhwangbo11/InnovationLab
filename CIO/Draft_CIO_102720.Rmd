@@ -28,7 +28,7 @@ I think for me, I feel very clear about what I like to do. I love managing and w
 
 Before I forget, oh yes, I'm writing this to keep a record of my thinking process or should be processes and logic about 1) Summarizing the experiences and references (mostly books) that I read for CIO reference 2) Tracking what I have read so I know what to apply for the current/future projects and 3) motivate myself to write more so I can finish my literature review for dissertation and finish write up part of dissertation by April 2021 for committee review to graduate from the current program by June 2021.
 
-Thanks for reading this random post and hopefully, I can finish writing my dissertaion by the time when I am done writing this R Markdown document.
+Thanks for reading this random post and hopefully, I can finish writing my dissertaion by the time when I am done writing this R Markdown document and work as a research professor who also serves as a chief information officer. 
 
 # Without Further Due
 Ok, I don't think you'll believe this but I've written all this junk that you're reading in a software called [RStudio](https://rstudio.com/) on its [R Markdown](https://rmarkdown.rstudio.com/) which knits my text as chunks of codes that publishes on [RPubs](https://rpubs.com/) and when I login to my [Github](https://github.com/mhwangbo11/InnovationLab/tree/master/CIO), as I push my [commit](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project), this document is also available on my repository so check it out all these hyperlinks if you're interested in more about how I re-learned to code in [YAML](https://yaml.org/) in the past year or two.
