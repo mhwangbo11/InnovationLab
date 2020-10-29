@@ -36,6 +36,10 @@ Ok, I don't think you'll believe this but I've written all this junk that you're
 As I am writing this stuff, I am also tracking how much I am wasting my time using [Toggl](https://toggl.com/) and I'll make sure I'll write down how much time I have spent each time when I am writing.
 
 * October 27, 2020: 1hr 15 mins | Motivation, Without Further Due, & Estimating Project Timeline
+* October 28, 2020: 15 mins | Innovation Lab
+
+# Launching Innovation Lab
+When I first joined my current organization as an evaluation project lead, I thought it would be no brainer to ask questions like...
 
 # Estimating Project Timeline
 Patrick Gleeson's recommendation from *Working with Coders: A guide to Software Development for the Perplexed Non-Techie (2017, p.38)* suggests estimating a task should be considered as multiple graphs not points and here's how I interpret it:
