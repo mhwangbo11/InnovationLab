@@ -13,6 +13,23 @@ published: false
 
 
 
+# Univ of WA Cultivate Learning
+## Primary
+### Purple (PMS 267 C)
+* HEX: 5F259F
+* RGB: 95 37 159
+
+### Green (PMS Green C)
+* HEX: 00AB84
+* RGB: 0 171 132
+
+### Golden Yellow (PMS 1225 C)
+* HEX: FFC845
+* RGB: 255 200 69
+
+## Secondary
+
+
 # Mamamoo
 ## Purple
 * HEX: 4D3396
