@@ -13,7 +13,6 @@ published: false
 
 
 
-<<<<<<< HEAD
 # Univ of WA Cultivate Learning
 ## Primary
 ### Purple (PMS 267 C)
@@ -29,15 +28,8 @@ published: false
 * RGB: 255 200 69
 
 ## Secondary
-
-
-=======
 # Cultivate Learning
-## Primary
 
-## Secondary
-
->>>>>>> cce8a7819f3c756a4c4a941786b726709ed07f8d
 # Mamamoo
 ## Purple
 * HEX: 4D3396
