@@ -1,0 +1,54 @@
+List of Resources for Data Related Researchers
+Drafted on January 19, 2021 | Min Hwangbo
+
+Artificial Intelligence, Deep Learning, & Machine Learning
+- AI, ML, and DL: How not to get them mixed (Towards Data Science): https://towardsdatascience.com/understanding-the-difference-between-ai-ml-and-dl-cceb63252a6c
+- Intro to Artificial Intelligence (MIT OpenCourseWare): https://www.youtube.com/watch?v=TjZBTDzGeGg&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+- Intro to Deep Learning (MIT OpenCourseWare): https://www.youtube.com/watch?v=njKP3FqW3Sk
+- Intro to Machine Learning (MIT OpenCourseWare): https://www.youtube.com/watch?v=h0e2HAPTGF4
+
+Concept Mapping
+- CMap by FL Institute for Human & Machine Cognition (IHMC): https://cmap.ihmc.us/
+
+Data Analytics & Data Science
+- Cousera Courses: https://www.coursera.org/courses?query=data%20analytics
+- Data Analytics v. Data Science: https://www.northeastern.edu/graduate/blog/data-analytics-vs-data-science/
+- Grow with Google: https://grow.google/
+
+Data Assessment & Literacy
+- Data wise at the system level (2016) Harvard Graduate School of Education. 
+	https://datawise.gse.harvard.edu/data-wise-system-level
+- Developing a Data Literate Workforce (n.d.) | qlik: https://www.qlik.com/us/-/media/files/resource-library/global-us/register/whitepapers/wp-developing-a-data-literate-workforce-en.pdf
+- Lockwood, M., Dillman, M., and Boudett., K. P. (Sept., 2017) R&D: Using data wisely at the system level. Phi Delta Kappan 99 (1), 25-30.
+	http://www.kappanonline.org/using-data-wisely-system-level/
+- Ridsdale, C., et al. (2017) Strategies and best practices for data literacy education: Knowledge synthesis report. Dalhouse University
+	http://www.mikesmit.com/wp-content/papercite-data/pdf/data_literacy.pdf
+
+Data Visualiation
+- Chris Adolph's Visualizing Data and Models: https://faculty.washington.edu/cadolph/index.php?page=22
+- ColorBrewer Palette (Brewer & Harrower @ Penn State Univ.): https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
+- Ed Tufte's Framework: https://www.edwardtufte.com/tufte/
+- Tableau Training: https://www.tableau.com/learn/training/20204
+
+Git & Github
+- Intro to Git & Github (@ HubSpot): https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners#:~:text=A%20quick%20aside%3A%20git%20and,tools%20which%20integrate%20with%20git.
+- Github Guide: https://guides.github.com/introduction/git-handbook/
+
+R & RStudio
+- Chuck Lanfear's Intro to R: https://clanfear.github.io/CSSS508/
+- R Studio Blog: https://education.rstudio.com/teach/materials/
+- Univ of VA PhD Plus: https://uvastatlab.github.io/phdplus/intror.html
+
+Statistics
+- Stat545 by Jenny Bryan: https://stat545.com/
+- R & STATA Equivalencies by Chuck Lanfear (2019): https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html 
+
+Survey Analysis
+- via Survey Monkey: https://help.surveymonkey.com/articles/en_US/kb/How-to-analyze-results
+- via Qualtrics: https://www.qualtrics.com/experience-management/research/analysis-reporting/
+
+Thematic Analysis (TA)
+- Univ of Auckland TA: https://www.psych.auckland.ac.nz/en/about/thematic-analysis.html
+
+Time Tracker
+- toggl: https://toggl.com/
