@@ -3,3 +3,7 @@ Thought on thematic analysis
 1) Inductive v. deductive approach
 2) What's considered best for the audience?
 3) How to summarize the information into a meaningful form?
+
+R Software
+RQDA: https://rqda.r-forge.r-project.org/
+RQDA Experience/Demo: https://martinctc.github.io/blog/a-short-r-package-review-rqda/
