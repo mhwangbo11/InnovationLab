@@ -1,0 +1,5 @@
+https://keithmcnulty.github.io/peopleanalytics-regression-book/presentations/polr.html#1
+
+https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html
+
+https://cran.r-project.org/web/packages/stringr/vignettes/stringr.html
