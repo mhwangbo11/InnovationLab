@@ -62,7 +62,43 @@ Instructor: [David Aucsmith](https://www.linkedin.com/in/aucsmith/)
 * Can you project/predict what is going to happen at a battle? You'd consider sending a scout, build a perimeter, build a fence, start communicating, etc. 
 * It just can't stand static. 
 
-## Module 1 Resource: Criteria to Evaluate Computer and Network Security
+### Resource: Criteria to Evaluate Computer and Network Security
 
 > From *Computers at Risk: Computing in the Information Age (1991)*
+
+# Module 2: Basic Knowledge Units for Cyber Education
+
+## Cyber professional
+
+* Combination of "Science" & "Art"
+* The "Art" piece can be acquired/learned by how systems are attacked, managed, risk management, architect, etc
+* It doesn't even have to come from a Tech's perspective
+
+### It's more important to learn and add value by understanding *context*
+
+* Business process: Manage/mitigate risks i.e. data about people -> considered a business decision.
+* Being more technical -> Generally better
+* Fundamentals you should study are the following:
+
+## Fundamentals
+
+* What's available now? (Tech-wise) including firewalls, spam filters, duo-factors, etc
+* Business process i.e. identification/authentication processes
+* Procedural weaknesses
+* Training issues i.e. What if someone didn't know you should not share a sensitive info via e-mail?
+* How hardware works 
+* Basics of programming and how tool works
+* Basics of software
+* Basics of networking i.e. DNS text transmission ->  is it considered normal?
+
+> **The better you know these, the better you'll be as a cybersecurity professional.** 
+
+### How do you experience these? 
+
+* University (CS or Business degree)
+* Artifacts of attacks or incidents 
+* Used to be only available for certain professionals within a gov't sector
+* Now also available among large institutions i.e. MS, Amazon, Apple, Google, FB...
+
+> **Now these "Arts" are important.**
 

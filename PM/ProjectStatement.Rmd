@@ -1,0 +1,59 @@
+---
+title: "Wrapup_STEAM_012721"
+author: "Min Hwangbo"
+date: "1/27/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Research-based Curriculum Project (2019-20) 
+Created by Min Hwangbo
+Created on 1/30/2020
+
+***********************************************************
+* Title: Temporary storage file for Research-based Curriculum Project (2019-20)
+* Contract #: DCYF 20-1012 Sec 4.8
+* Budget number: 63-9629
+* Data Source: DCYF ELMS
+***********************************************************
+About Dataset
+The dataset (csv) in this folder contains curriculum training information/description available via Washington State Department of Children, Youth, and Families ECEAP Professional Development Registry (DCYF ELMS).
+It is used for conducting needs assessment/landscape analysis to identify those who have access to Creative Curriculum training series via Cultivate Learning (formerly CQEL).
+
+About Data collection methodology
+Information in this dataset is entered by DCYF ECEAP administrator.
+The data was transferred by a DCYF ECEAP team leads via ShareFile in December 2019 to WA PPI team, then re-transferred to this team on January 30, 2020.
+
+Directory Tree
+Research-based Curiculum Project/
+  -Data/
+    -C2F_Raw_120219
+    -CCCoaches_Raw_120219
+    -CCTeachers_Raw_120219
+  -CodeLog_Training_013020
+  -README.txt
+
+Author
+Min Hwangbo, Project Lead: Research-based Curriculum Project & Graduate Research Assistant
+
+License
+This project is licensed under the Cultivate Learning Data Analysis System Hub (C-DASH) Terms and Conditions of Use. 
+If you have questions about these Terms and Conditions of Use, you should contact the Cultivate Learning IT team, which provides this system.
+
+***********************************************************
+Acknowledgments
+Support for this needs assessment/landscape analysis came from: 
+- Dr. Gail E. Joseph's UW College of Education Research Assistantship;
+- Washington State Department of Children, Youth and Families;
+- Bill & Melinda Gates Foundation; and,
+- Dr. Juliet Taylor, Dr. Soleil Boyd, Kim Votry, Mark McCarty, Johnna Lee, Dr. Cricket Limlingan, & Dr. Janet Soderberg of Cultivate Learning.
+
+Dr. Joseph, Bezos Family Foundation Distinguished Professor in Early Learning, is the founding executive director of Cultivate Learning.
+
+Partial support for this needs assessment/landscape analysis came from a Shanahan Endowment Fellowship and a Eunice Kennedy Shriver National Institute of Child Health and Human Development training grant, T32 HD007543, 
+to the Center for Studies in Demography & Ecology (CSDE) at the University of Washington as a graduate trainee of the CSDE program.
+***********************************************************
+
