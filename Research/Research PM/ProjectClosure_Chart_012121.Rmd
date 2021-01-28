@@ -17,20 +17,59 @@ published: false
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Front Matter for the data relevant project
+# Overview
 
-## Project Scope (Primarily internal scope)
+## Project Title
 
-## Timeframe
+STEAM trunk study
+
+## Project Duration: 
+
+* Year 1: 2017-18 
+* Year 2: 2018-19
+
+
+## Project Goal (Primarily internal scope)
+
+Increase confidence level as well as  math concepts among early learning professionals via video/remote coaching using Coaching Companion as well as reflection of professional development materials (videos & resource sheets)
+
+## Directory
+
+STEAM Trunk Data Analysis 17_18_Pilot / 
+  Data on pre- and post- math comfort surveys
+	Data on trunk Surveys
 
 ## Funding
 
-## Other comments
+## Data
 
-### It (the project) also should be searchable
+### Surveys
 
-### Synopsis/description
+#### Pre Math Comfort Survey Original (neg items flipped)
 
-### Initial Research Questions
+Below is the overview of the data collected through these surveys (all de-identified w/ participant id)
 
-### Output/reports/deliverables 
+* 27 obs / 31 vars
+* Likert-Type | 1 = Strongly Disagree; 6 = Strongly Agree
+* Note: Q7, Q9, Q10, Q11, Q14, Q16, Q17: The score of these items were reversed (i.e. 1 -> 6 or 6 -> 1) due to the negative quality of the question (i.e. Math related activities are too difficult for young children - for analysis purposes, we reverse coded those negatively phrased questions). 
+
+#### Data on trunk Surveys
+
+The following files have collected information in regards to application, use, and satisfaction of research participants who have received STEAM trunks related to the specific math content area.  
+
+Below is the overview of the data collected through these surveys (all de-identified w/ participant id)
+
+* Episode 1 Counting: 34 obs / 9 vars
+* Episode 2 Measurement: 32 obs / 12 vars
+* Episode 3 Geometry: 29 obs / 12 vars
+* Episode 4 Patterns: 27 obs / 12 vars
+
+
+## It (the project) also should be searchable
+
+## Synopsis/description
+
+## Initial Research Questions
+
+## Output/reports/deliverables 
+* EFA/CFA
