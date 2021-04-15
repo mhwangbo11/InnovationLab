@@ -1,0 +1,3 @@
+Web Data Connector: https://keshiarose.github.io/Toggl-Web-Data-Connector/togglwdc_19.4.html
+Workspace id: 4734682
+API: https://track.toggl.com/profile

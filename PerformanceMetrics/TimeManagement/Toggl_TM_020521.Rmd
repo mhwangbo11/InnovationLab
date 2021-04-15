@@ -1,0 +1,23 @@
+---
+title: "Toggl_TimeManagement_020521"
+author: "Min Hwangbo"
+date: "2/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Step 1: Load package
+```{r}
+library(togglr) # Toggle R package created from https://thinkr-open.github.io/togglr/
+```
+
+# Step 2: Load API
+```{r}
+set_toggl_api_token("your_token_api")
+```
+# Toggl dashboard
+```{r}
+```
