@@ -1,0 +1,38 @@
+---
+title: "Radar Chart example"
+author: "Min Hwangbo"
+date: "6/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Acknowledegements
+
+* Inpisration and steps for the current project comes from [Zach, 2020](https://www.statology.org/radar-chart-in-r/#:~:text=%20In%20order%20to%20create%20a%20radar%20chart,to%20display%20on%20the%20radar%20chart.%20More%20) @ [Statology](https://www.statology.org/).
+
+* The data used in this practice are collceted via Leadership Practices Inventory (LPI) 360 created by Kouzes, J. & Posner, B. (1987) @ [The Leadership Challenge](https://www.leadershipchallenge.com/) - A Wiley Brand. 
+
+* Five practices of exemplary leadership summary data are represented including 1) Model the way; 2) Inspire a shared vision; 3) Challenge the process; 4) Enable others to act; and, 5) Encourage the heart.
+
+* The data used in this practice are my personal performance metrics reported by myself, two direct reports, five colleagues, and two supervisors (n=10)
+
+# Load a package
+```{r, message = F, warning = F}
+library(fmsb)  # Medical metrics / demographic data package
+library(readr) # CSV loading package
+```
+
+# Load a data set 
+```{r}
+LPIdata <- read_csv("~/GitHub/InnovationLab/PerformanceMetrics/LPI/Data/MH_LPI_2019.csv")
+```
+
+## Quality check
+```{r}
+head(LPIdata) # first five records
+tail(LPIdata) # last five records
+ls(LPIdata)   # vars in the data set
+```
