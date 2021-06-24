@@ -9,30 +9,89 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Acknowledegements
+# Prep
 
-* Inpisration and steps for the current project comes from [Zach, 2020](https://www.statology.org/radar-chart-in-r/#:~:text=%20In%20order%20to%20create%20a%20radar%20chart,to%20display%20on%20the%20radar%20chart.%20More%20) @ [Statology](https://www.statology.org/).
+## Acknowledegements
 
-* The data used in this practice are collceted via Leadership Practices Inventory (LPI) 360 created by Kouzes, J. & Posner, B. (1987) @ [The Leadership Challenge](https://www.leadershipchallenge.com/) - A Wiley Brand. 
+* Inspiration and steps for the current project comes from [Holtz, Y.](https://www.r-graph-gallery.com/143-spider-chart-with-saveral-individuals.html) @ [the R Graph Gallery](https://www.r-graph-gallery.com/index.html) and [Zach, 2020](https://www.statology.org/radar-chart-in-r/#:~:text=%20In%20order%20to%20create%20a%20radar%20chart,to%20display%20on%20the%20radar%20chart.%20More%20) @ [Statology](https://www.statology.org/).
+
+* The package used for the current project is called `fmsb` (last updated May 2021) by [Minato Nakazawa](http://minato.sip21c.org/msb/).
+
+* The data used in this practice are collected via Leadership Practices Inventory (LPI) 360 created by Kouzes, J. & Posner, B. (1987) @ [The Leadership Challenge](https://www.leadershipchallenge.com/) - A Wiley Brand. 
 
 * Five practices of exemplary leadership summary data are represented including 1) Model the way; 2) Inspire a shared vision; 3) Challenge the process; 4) Enable others to act; and, 5) Encourage the heart.
 
-* The data used in this practice are my personal performance metrics reported by myself, two direct reports, five colleagues, and two supervisors (n=10)
+* The data used in this practice are my personal performance metrics reported by myself, two direct reports, five colleagues, and two supervisors (n=10) in the 2018-2019 fiscal year.
 
-# Load a package
+* Data set can be found from my [GitHub](https://github.com/mhwangbo11/InnovationLab/tree/master/PerformanceMetrics/LPI/Data) page
+
+## Why Radar Chart?
+According to Modern Systems Knowledge Transformation Center (MSKTC), *radar charts* are used to compare two or more items or groups on various features or characteristics. It is one of the data visualization options that can display multiple metrics in one single visual that the transparent shading provides how each factors were measured. 
+
+As a rule of thumb, try to compare one or two groups on one radar as well as try visualizing five to seven factors on one radar.
+
+## Load a package
 ```{r, message = F, warning = F}
 library(fmsb)  # Medical metrics / demographic data package
 library(readr) # CSV loading package
 ```
 
-# Load a data set 
+## Load a data set 
 ```{r}
 LPIdata <- read_csv("~/GitHub/InnovationLab/PerformanceMetrics/LPI/Data/MH_LPI_2019.csv")
 ```
 
-## Quality check
+### Data Quality check
 ```{r}
-head(LPIdata) # first five records
-tail(LPIdata) # last five records
+head(LPIdata, 5) #, first five records
+tail(LPIdata, 5) # last five records
 ls(LPIdata)   # vars in the data set
+```
+
+* Row 1 represents maximum possible score for each factor.
+* Row 2 represents minimum possible score for each factor.
+* Row 3 represents score that I have reported on each factor.
+
+* Row 4 represents average score reported by my colleagues.
+
+# Data viz
+
+## Simple radar chart using `radarchart` function
+```{r}
+radarchart(LPIdata)
+```
+
+## Let's customize this!
+
+We can use following arguments for customizing our radar charts:
+
+* Polygon features:
+  * `pcol`: Line color
+  * `pfcol`: Fill color
+  * `plwd`: Line width
+
+* Grid features:
+
+  * `axistype`: The type of axes, specified by any of 0 to 5. Default is 0.
+* `cglcol`: Net color
+* `cglty`: Net line type
+* `axislabcol`: Axis label color
+* `caxislabels`: Vector of axis labels to display
+* `cglwd`: Net width
+* `vlcex`: Group labels size
+
+If you want more detailed information, please reference the [`fmsb` package CRAN wiki](https://rdrr.io/cran/fmsb/man/radarchart.html) page.
+
+```{r}
+radarchart(LPIdata,
+           axistype = 1,
+           pcol = 'pink',
+           pfcol= rgb(0.9,0.2,0.5,0.3),
+           plwd=3, 
+           cglcol='grey',
+           cglty=1,
+           axislabcol='grey',
+           cglwd=0.6,
+           vlcex=1.1,
+           title='LPI Metrics (2019)')
 ```
