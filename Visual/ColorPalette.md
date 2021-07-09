@@ -13,7 +13,11 @@ published: false
 
 
 
-# Univ of WA Cultivate Learning
+# Inpirations
+* [Stacey Berglind](https://www.linkedin.com/in/staceyberglind/)
+* [Pantone Connect](https://connect.pantone.com/)
+
+# Cultivate Learning @ Univ. of Washington
 ## Primary
 ### Purple (PMS 267 C)
 * HEX: 5F259F
@@ -28,7 +32,6 @@ published: false
 * RGB: 255 200 69
 
 ## Secondary
-# Cultivate Learning
 
 # Mamamoo
 ## Purple
@@ -62,15 +65,21 @@ published: false
 * RGB: 235 76 62
   
 # Pantone
-## 2021 Color of the year?: Aqua Splash 14-4812
-* HEX: 85CED1
-* RGB: 133 206 209
+## 2021
 
-## 2020 Color of the year: Classic Blue 19-4052
+### Ultimate Gray 17-5104
+* HEX: 97999B
+* RGB: 151 153 155
+
+### Illuminating 13-0647
+* HEX: F9E547
+* RGB: 249 229 71
+
+## 2020: Classic Blue 19-4052
 * HEX: 0F4C81
 * RGB: 15 76 129
 
-## 2019 Color of the year: Living Coral 16-1546
+## 2019: Living Coral 16-1546
 * HEX: FA7268
 * RGB: 250 114 104
 
@@ -91,3 +100,12 @@ published: false
 ## Pantone 812C Flamingo Pink
 * HEX: FF5FA2
 * RGB: 255 95 162
+
+# WA STEM
+## Orange
+* HEX: d96429
+* RGB: 217 100 41
+
+## Grey
+* HEX: a7a3a0
+* RGB: 167 163 160
