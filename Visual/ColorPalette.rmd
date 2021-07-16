@@ -103,7 +103,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * HEX: FF5FA2
 * RGB: 255 95 162
 
-# WA STEM
+# Washington STEM
 ## Orange
 * HEX: d96429
 * RGB: 217 100 41
